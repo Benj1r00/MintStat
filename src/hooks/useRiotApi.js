@@ -90,7 +90,14 @@ function useRiotApi() {
                     spell1Name: summonerSpells[playerStats.summoner1Id] || "SummonerFlash",
                     spell2Name: summonerSpells[playerStats.summoner2Id] || "SummonerDot",
                     primaryRuneId: primaryRunes[playerStats.perks.styles[0].selections[0].perk] || "104px-Conqueror_rune",
-                    secondaryStyleId: secondaryStyles[playerStats.perks.styles[1].style] || "Precision_icon"
+                    secondaryStyleId: secondaryStyles[playerStats.perks.styles[1].style] || "Precision_icon",
+                    item0: playerStats.item0,
+                    item1: playerStats.item1,
+                    item2: playerStats.item2,
+                    item3: playerStats.item3,
+                    item4: playerStats.item4,
+                    item5: playerStats.item5,
+                    trinket: playerStats.item6
                 };
             });
 

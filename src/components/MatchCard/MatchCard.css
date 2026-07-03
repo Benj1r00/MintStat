@@ -115,3 +115,56 @@
   align-items: center;
   gap: 6px;
 }
+
+/* === БЛОК ПРЕДМЕТІВ === */
+
+/* Головний контейнер: тримає сітку предметів і тотем поруч */
+.items-block {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Відстань між основними предметами та тотемом */
+}
+
+/* Робимо сітку 3x2 для 6 основних слотів */
+.main-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 24px); /* 3 колонки по 24px */
+  grid-template-rows: repeat(2, 24px);    /* 2 ряди по 24px */
+  gap: 2px; /* Маленька відстань між самими предметами */
+}
+
+/* Стиль для самої картинки предмета */
+.item-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px; /* Легке заокруглення, як у грі */
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Додає трохи глибини */
+}
+
+/* Стиль для порожнього слота (напівпрозорий темний квадрат) */
+.empty-slot {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4); /* Темний фон */
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Дуже слабка світла рамка */
+}
+
+/* Стиль для тотема (item6) */
+.trinket-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; /* Тотеми в LoL традиційно виділяють кругом! */
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Якщо тотема немає, порожній слот теж має бути круглим */
+.trinket-empty {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}

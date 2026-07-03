@@ -48,6 +48,13 @@ function App() {
                   spell2Name={match.spell2Name}
                   primaryRuneId={match.primaryRuneId}
                   secondaryStyleId={match.secondaryStyleId}
+                  item0={match.item0}
+                  item1={match.item1}
+                  item2={match.item2}
+                  item3={match.item3}
+                  item4={match.item4}
+                  item5={match.item5}
+                  trinket={match.trinket}
                 />
               ))}
             </section>
