@@ -164,14 +164,14 @@ export default function FullGameStatsPage() {
                         ></div>
                         
                     ) : (
-                    
-                        <img 
-                            key={index} 
-                            className="crossed-circle" 
-                            src={`https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${championMap[championId]}.png`} 
-                            alt={championMap[championId] || "Unknown"} 
-                            title={championMap[championId]}
-                        />
+                        <div key={index} className='crossed-circle'>
+                            <img 
+                                key={index} 
+                                src={`https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${championMap[championId]}.png`} 
+                                alt={championMap[championId] || "Unknown"} 
+                                title={championMap[championId]}
+                            />
+                        </div>
                         
                     )
                 ))}
