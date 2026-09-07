@@ -8,7 +8,7 @@ function MatchCard({ isWin=false, champion, kills, deaths, assists,
                      item0, item1, item2, item3, item4, item5, trinket,
                      onClick, flippedcss, version, name, tag}) {
 
-    const pathToChampionImg = `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion}.png`;
+    const pathToChampionImg = `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${champion.toLowerCase() === 'fiddlesticks' ? 'Fiddlesticks' : champion}.png`;
     const pathToMainRunIdImg = `/assets/primaryRuneId/${primaryRuneId}.webp`;
     const pathTosecondaryRunIdImg = `/assets/secondaryStyleId/${secondaryStyleId}.webp`;
     const spell1ImageUrl = `https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${spell1Name}.png`;
@@ -17,7 +17,7 @@ function MatchCard({ isWin=false, champion, kills, deaths, assists,
     
     return (
         <div className={`statsContainer ${flippedcss ? 'flipped' : ''}`} 
-        style={{ backgroundColor: isWin ? '#1A1D3C' : '#301A24' }} 
+        style={{ backgroundColor: isWin ? '#1B382B' : '#282a2e' }} 
         onClick={onClick}>
         
         <div className="championBlock">

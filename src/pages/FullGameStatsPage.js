@@ -96,7 +96,7 @@ export default function FullGameStatsPage() {
             </div>  
             <div className="teams-matrix-container">
                 <div className="team-column">
-                    <h3>Синя команда</h3>
+                    <h3 style={{color: "#5B9BD5"}}>Синя команда</h3>
                     <ul className="team-list">
                         {matchDetails.team100.map((player) => (
                             <MatchCard 
@@ -125,7 +125,7 @@ export default function FullGameStatsPage() {
                 </div>
                 
                 <div className="team-column">
-                    <h3 style={{ textAlign: "right" }}>Червона команда</h3>
+                    <h3 style={{ textAlign: "right", color: "#E06C75"}}>Червона команда</h3>
                     <ul className="team-list">
                         {matchDetails.team200.map((player) => (
                             <MatchCard 
